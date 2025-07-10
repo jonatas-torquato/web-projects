@@ -16,6 +16,14 @@
 
 <body class="main-bg">
     <aside class="menu gray-bg">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="darkModeToggle">
+                <input type="checkbox" id="darkModeToggle" />
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Light</span>
+        </div>
+
         <div class="main-content menu-content">
             <h1>
                 <a href="#"></a>
@@ -26,17 +34,27 @@
                 <nav>
                     <ul>
                         <li><a href="#intro">HOME</a></li>
+                        <li class="dropdown">
+                        <a href="#">SERVIÇOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#appsmobile">Aplicativos Mobile</a></li>
+                            <li><a href="#devweb">Desenvolvimento Web</a></li>
+                            <li><a href="#supportweb">Suporte para Website</a></li>
+                            <li><a href="#admweb">Administração de Website</a></li>
+                            <li><a href="#webdesign">Web Design</a></li>
+                        </ul>
+                        </li>
                         <li><a href="#vantagens">VANTAGENS</a></li>
                         <li><a href="#funciona">COMO FUNCIONA</a></li>
                         <li><a href="#contato">CONTATO</a></li>
                     </ul>
                 </nav>
-            </div>
+        </div>
     </aside>
 
     <div class="menu-spacing"></div>
 
-    <section id="intro" class="intro main-bg section">
+    <section id="intro" class="intro main-bg section fade-in">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>Desenvolvimento de Aplicativos Móveis</h2>
@@ -51,7 +69,7 @@
         </div>
     </section>
 
-    <section id="vantagens" class="grid-one white-bg section">
+    <section id="vantagens" class="grid-one white-bg section fade-in">
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">vantagens</h2>
             <p class="grid-description">Escolher a MSA Consultoria para desenvolver seu aplicativo é optar por uma parceria estratégica, com foco em 
@@ -83,7 +101,7 @@
         </div>
     </section>
 
-    <section id="funciona" class="intro main-bg section">
+    <section id="funciona" class="intro main-bg section fade-in">
         <div class="main-content second-content">
             <h2 class="grid-main-heading">como funciona?</h2>
             <p>Desenvolver um aplicativo com a MSA é simples e transparente. Nós conduzimos você por todas as etapas, com uma metodologia clara e eficiente que garante agilidade sem comprometer a qualidade.</p>
@@ -145,7 +163,7 @@
         </article>
     </section>
 
-    <section id="contato" class="contato white-bg section">
+    <section id="contato" class="contato white-bg section fade-in">
         <div class="main-content intro-content">
 
 
@@ -174,7 +192,7 @@
                     </div>
 
                     <div class="form-group full-width">
-                        <button type="submit">Enviar</button>
+                        <button type="button" id="button-enviar">Enviar</button>
                     </div>
 
                 </fieldset>
@@ -186,6 +204,12 @@
     <footer id="footer" class="footer main-bg">
         <p>Developed by Jonatas Torquato</p>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/alert-button-contact.js"></script>
+<script src="assets/js/smooth-scrolling.js"></script>
+<script src="assets/js/dark-mode.js"></script>
+
 </body>
 
 </html>
